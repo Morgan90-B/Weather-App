@@ -1,0 +1,109 @@
+:root{
+    --font-size: 17px;
+    --template-border: 1px solid black;
+}
+
+html{
+    background-color: #d1c9c9;
+}
+
+#content{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: 1fr 60px;
+    /*background-color: #5a6aa8;*/
+    background-image: url(images/one.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 30px;
+}
+
+#sete{
+    display: grid;
+    grid-template-rows: 50px 1fr;
+}
+
+#extra{
+    grid-column: 1 / 3;
+    display: flex;
+    font-size: var(--font-size);
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
+}
+
+.spacer{
+    font-size: calc(var(--font-size)*1.3);
+    font-weight: bolder;
+}
+
+#city{
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+
+button{
+    border: none;
+    background: none;
+}
+
+#temp{
+    display: grid;
+    grid-template-rows: 5fr 2fr;
+
+}
+
+#maintemp{
+    font-size: 10vw;
+    text-align: center;
+}
+
+#highnlow{
+    font-size: 3vw;
+    text-align: center;
+}
+
+#citytext{
+    font-size: 5vw;
+}
+
+#date{
+    font-size: 1.5vw;
+}
+
+#description{
+    font-size: 2vw;
+}
+
+#weathersymbol{
+    font-size: 3vw;
+}
+
+#search{
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    padding-right: 30px;
+}
+
+input{
+    border-radius: 20px;
+    background-color: rgba(128, 128, 128, 0.719);
+    border: none;
+    padding: 10px;
+}
+
+input::placeholder{
+    color: black;
+}
+
+.invisible{
+    display: none;
+}
+
+#extra{
+    color: black;
+    font-weight: bolder;
+}
