@@ -21,7 +21,7 @@ async function api(e) {
     data=await response.json();
     populate(data);
   } catch (error) {
-    console.log(error);
+    console.log("error");
   }
 }
 
